@@ -1,5 +1,5 @@
 document.getElementById('snake-game').addEventListener('click',()=>{
-    window.location.href = '/snake game/index.html';
+    window.location.href = 'snake.html';
 })
 
 document.getElementById('bubble-game').addEventListener('click',()=>{
@@ -7,13 +7,13 @@ document.getElementById('bubble-game').addEventListener('click',()=>{
 })
 
 document.getElementById('drago-game').addEventListener('click',()=>{
-    window.location.href = '/drago game/index.html';
+    window.location.href = 'drago.html';
 })
 
 document.getElementById('stone-paper-scissor-game').addEventListener('click',()=>{
-    window.location.href = '/stone paper scissor/index.html';
+    window.location.href = 'stone.html';
 })
 
 document.getElementById('tic-tac-toe-game').addEventListener('click',()=>{
-    window.location.href = '/tic tac toe/index.html';
+    window.location.href = 'tic.html';
 })
