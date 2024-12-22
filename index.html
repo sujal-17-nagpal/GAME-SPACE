@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Icons</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
+            gap: 20px;
+        }
+
+        .game {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game img {
+            width: 100%;  /* Use the full width of the container */
+            height: auto; /* Maintain aspect ratio, adjust height based on width */
+            max-height: 200px; /* Ensure the image does not exceed container's height */
+            object-fit: contain; /* Ensure the full image is displayed without being cropped */
+            background-color: #fff; /* Optional: white background to fill the empty space */
+            margin-bottom: 10px;
+            border-radius: 0;
+        }
+
+        .game h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .game p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Game</h1>
+        <div class="game-grid">
+            <!-- Game 1 -->
+            <div id="snake-game" class="game">
+                <img src="snake-game-img.png" alt="Game 1">
+                <h3>Game 1</h3>
+                <p>Snake Game</p>
+            </div>
+
+            <!-- Game 2 -->
+            <div id="bubble-game" class="game">
+                <img src="bubble-game-img.png" alt="Game 2">
+                <h3>Game 2</h3>
+                <p>Bubble Game</p>
+            </div>
+
+            <!-- Game 3 -->
+            <div id="drago-game" class="game">
+                <img src="drago-game-img.png" alt="Game 3">
+                <h3>Game 3</h3>
+                <p>Dragon game Game</p>
+            </div>
+
+            <!-- Game 4 -->
+            <div id="stone-paper-scissor-game" class="game">
+                <img src="stone-paper-scissor-game-img.png" alt="Game 4">
+                <h3>Game 4</h3>
+                <p>Stone paper scissor</p>
+            </div>
+
+            <!-- Game 5 -->
+            <div id="tic-tac-toe-game" class="game">
+                <img src="tic-tac-toe-game-img.png" alt="Game 5">
+                <h3>Game 5</h3>
+                <p>Tic Tac Toe</p>
+            </div>
+
+            <!-- Game 6 -->
+            <!-- <div class="game">
+                <img src="https://via.placeholder.com/300x200" alt="Game 6">
+                <h3>Game 6</h3>
+                <p>Sports Game</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
